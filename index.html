@@ -6,7 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
-        <style>@media screen and (max-width: 800px) {
+        <style>
+           
+    
+   /*This is the titel of the Website*/
+@media screen and (max-width: 800px) {
     
 h2 {
     position: absolute;
@@ -85,16 +89,16 @@ h2 span:nth-child(3) {
 h2:hover span:nth-child(3) {
  transform: translateY(-50%) scaleY(1);
 }
-/*dies ist der 3d effekt auf dem Text*/
+/*This is the 3d effect from the text*/
 @media screen and (max-width: 800px) {
 .text {
    
-    margin-top: 100%;
+    margin-top: 175%;
     position: absolute;
     font-size: 1.5em;
     font-weight: 700;
     top: 50%; 
-    right: 70%;
+    right: 40%;
     transform: translate(50%,-50%);
    
     font-family: verdana;
@@ -146,10 +150,23 @@ h2:hover span:nth-child(3) {
         1px 30px 60px rgba(16,16,16,0.4);
     }
     }
-/*dies ist das Hintergrundbild*/
+/*Background image*/
+@media screen and (max-width: 800px) {
+    
+
 body {
     background-image: url(https://fakeprof.github.io/pic/20220606125501_IMG_4766.JPG);
-    /*background-image: url(file:///C:/Users/JBSte/OneDrive/Code/Next%20me%20website%20try/and%20another/20220606125501_IMG_4766.JPG);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 200px;
+    padding-top: 50px;
+   
+    padding-bottom: 10px;
+}
+}
+@media screen and (min-width: 800px) {
+body {
+    background-image: url(https://fakeprof.github.io/pic/20220606125501_IMG_4766.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top: 200px;
@@ -158,23 +175,22 @@ body {
     padding-right: 50px;
     padding-bottom: 10px;
 }
-
-/*Versuch animation beim scrollen .under{position:sticky;top:0;} .wrapper {height: 200vh;}.over {margin-top: -100vh;position:relative;}*/
-/*Versuch animation beim scrollen verlangsahmung.carousel {scroll-snap-type: x mandatory;scroll-padding: 0 240px;}.carousel .item {scroll-snap-align: start;}*/
-/*Versuch animation beim scrollen verlangsahmung.container{height: 100%;scroll-snap-type: y mandatory;}.section{height: 100%;scroll-snap-align: start;scroll-snap-stop: always;}*/
-/*Versuch animation beim scrollen verlangsahmung html, body{margin:0;padding:0;height:100%;overflow:hidden;}.container{height: 100vh;scroll-snap-type: y mandatory;overflow: scroll;}.section{height: 100vh;scroll-snap-align: start;scroll-snap-stop: always;}*/
+}
 
 
-/*dies ist das Bild von mir*/
+
+/*Picture of me*/
 @media screen and (max-width: 1150px) {
 #Bild{
     width: 40%;
     height: 40%;
-margin-left: 20%;
-    text-align: right;
+
+    margin-left: 10%;
+    margin-right: 30%;
     background-repeat: inherit;
     margin-top: 145%;
-    padding-left: 35%;
+
+    
 }
 }
 @media screen and (min-width: 1150px) {
@@ -190,7 +206,7 @@ margin-left: 20%;
 /*video*/
 @media screen and (max-width: 800px) {
     video {
-        margin-top: 10%;
+        margin-top: 90%;
         width: 100%;
         height:100%;
        
@@ -233,7 +249,7 @@ margin-left: 20%;
 
 
 
-/*Website eingebunden*/
+/*my websites shown*/
 @media screen and (max-width: 800px) {
     
 
@@ -260,7 +276,7 @@ width: 80%;
     }
     @media screen and (max-width: 2000px) {
     
-/*Bildgröße einzeln website*/
+/*Picture size*/
         .web {
              
             width: 100%;
@@ -278,7 +294,7 @@ footer {
     font-size: 4em;
 }
 
-/* From uiverse.io by @alexruix     Textfeld*/
+/* Textarea*/
 @media screen and (max-width: 800px) {
 .input-group {
     position: relative;
@@ -442,7 +458,7 @@ footer {
     transition-delay: none;
    }
    
-/*Textfeld*/
+/*Textarea*/
 
 input, textarea {    
   margin-bottom: 10px;
@@ -458,7 +474,7 @@ input, textarea {
 
 
 
-/*dies ist für die Email*/
+/*for Email*/
 @media screen and (max-width: 800px) {
 a {
     text-decoration: none;
