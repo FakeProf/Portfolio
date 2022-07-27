@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <style>@media screen and (max-width: 800px) {
+    
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+}
+@media screen and (min-width: 800px) {
+    
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        font-size: 6em;
+        color: transparent;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    }
+h2 span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+    overflow: hidden;
+}
+
+h2:hover span:nth-child(1) {
+ transform: translateY(-10px);
+}
+
+h2 span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    transition: 0.5s;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+h2:hover span:nth-child(2) {
+ transform: translateY(18px);
+}
+
+h2 span:nth-child(3) {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translateY(-50%) scaleY(0);
+    width: 90%;
+    color: #000;
+    font-size: 0.22em;
+    letter-spacing: 0.5em;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 5px;
+    transition: 0.5s;
+   
+}
+
+h2:hover span:nth-child(3) {
+ transform: translateY(-50%) scaleY(1);
+}
+/*dies ist der 3d effekt auf dem Text*/
+@media screen and (max-width: 800px) {
+.text {
+   
+    margin-top: 100%;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: 700;
+    top: 50%; 
+    right: 70%;
+    transform: translate(50%,-50%);
+   
+    font-family: verdana;
+    
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+}
+@media screen and (min-width: 800px) {
+    .text {
+       
+        margin-top: 23em;
+        position: absolute;
+        font-size: 3em;
+        font-weight: 700;
+        top: 50%; 
+        right: 70%;
+        transform: translate(50%,-50%);
+       
+        font-family: verdana;
+        
+        color: #f5f5f5;
+        text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            1px 7px 1px #919191,
+            1px 8px 1px #919191,
+            1px 9px 1px #919191,
+            1px 10px 1px #919191,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+    }
+    }
+/*dies ist das Hintergrundbild*/
+body {
+    background-image: url(https://fakeprof.github.io/pic/20220606125501_IMG_4766.JPG);
+    /*background-image: url(file:///C:/Users/JBSte/OneDrive/Code/Next%20me%20website%20try/and%20another/20220606125501_IMG_4766.JPG);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+/*Versuch animation beim scrollen .under{position:sticky;top:0;} .wrapper {height: 200vh;}.over {margin-top: -100vh;position:relative;}*/
+/*Versuch animation beim scrollen verlangsahmung.carousel {scroll-snap-type: x mandatory;scroll-padding: 0 240px;}.carousel .item {scroll-snap-align: start;}*/
+/*Versuch animation beim scrollen verlangsahmung.container{height: 100%;scroll-snap-type: y mandatory;}.section{height: 100%;scroll-snap-align: start;scroll-snap-stop: always;}*/
+/*Versuch animation beim scrollen verlangsahmung html, body{margin:0;padding:0;height:100%;overflow:hidden;}.container{height: 100vh;scroll-snap-type: y mandatory;overflow: scroll;}.section{height: 100vh;scroll-snap-align: start;scroll-snap-stop: always;}*/
+
+
+/*dies ist das Bild von mir*/
+@media screen and (max-width: 1150px) {
+#Bild{
+    width: 40%;
+    height: 40%;
+margin-left: 20%;
+    text-align: right;
+    background-repeat: inherit;
+    margin-top: 145%;
+    padding-left: 35%;
+}
+}
+@media screen and (min-width: 1150px) {
+    #Bild{
+    margin-left: 20%;
+        text-align: right;
+        background-repeat: inherit;
+        margin-top: 65em;
+        padding-left: 35%;
+    }
+    }
+
+/*video*/
+@media screen and (max-width: 800px) {
+    video {
+        margin-top: 10%;
+        width: 100%;
+        height:100%;
+       
+        margin-bottom: 15%;
+      }
+}
+@media screen and (min-width: 800px) {
+    video {
+        margin-top: 45%;
+        width: 80%;
+        height:100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 15%;
+      }
+}
+
+/*details*/
+#br {
+    margin-top: 10%;
+    
+}
+@media screen and (max-width: 800px) {
+    details {
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 1.5em;
+      }
+}
+
+@media screen and (min-width: 800px) {
+    details {
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.5em;
+}
+}
+
+
+
+/*Website eingebunden*/
+@media screen and (max-width: 800px) {
+    
+
+.web1 {
+width: 80%;
+    overflow: auto;
+    height: 28vh;
+    margin-bottom: 40em;  
+    margin-left: 8%; 
+    margin-right: 8%;
+}
+}
+@media screen and (min-width: 800px) {
+    
+
+    .web1 {
+    
+        overflow: auto;
+        height: 48vh;
+        margin-bottom: 40em;  
+        margin-left: 25%; 
+        margin-right: 25%;
+    }
+    }
+    @media screen and (max-width: 2000px) {
+    
+/*Bildgröße einzeln website*/
+        .web {
+             
+            width: 100%;
+            overflow: auto;
+            height: 100%;
+        }
+        }
+
+/*footer*/
+footer {
+    text-align: center;
+
+}
+#h1 {
+    font-size: 4em;
+}
+
+/* From uiverse.io by @alexruix     Textfeld*/
+@media screen and (max-width: 800px) {
+.input-group {
+    position: relative;
+    margin-right:5%;
+    margin-left: 5%;
+   }
+}
+
+@media screen and (min-width: 800px) {
+    .input-group {
+        position: relative;
+        margin-right:33%;
+        margin-left: 33%;
+       }
+}
+
+
+   .input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {margin-left: 4em;
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #d7d5d5;
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-image: linear-gradient(to right,#060709,#ce6298);
+    padding: 0.2em;
+    color: #fff;
+   }
+/* From uiverse.io by @menezes11 */
+#submit:focus, #submit:valid {
+    outline: none;
+    border: 1.5px solid #d7d5d5;
+   }
+   
+   #submit:focus ~ label, #submit:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-image: linear-gradient(to right,#060709,#ce6298);
+    padding: 0.2em;
+    color: #fff;
+   }
+
+
+
+
+/*Submit button*/
+
+#submit {
+
+    position: relative;
+    padding: 0.1em 3em;
+    outline: none;
+    border: 1px solid #303030;
+   
+    color: #e5d9eb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+   
+   #submit:hover {
+    box-shadow: 0 0 10px #ce6298, 0 0 25px #070709, 0 0 50px #ce6298;
+    transition-delay: 0.6s;
+   }
+   
+   #submit span {
+    position: absolute;
+   }
+   
+   #submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e5d9eb);
+   }
+   
+   #submit:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   #submit span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e5d9eb);
+   }
+   
+   #submit:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   #submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #e5d9eb);
+   }
+   
+   #submit:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   #submit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #e5d9eb);
+   }
+   
+   #submit:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   #submit:active {
+    background: #120d12;
+    background: linear-gradient(to top right, #000000, #ce6298);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #000000, 0 0 8px #ce6298, 0 0 8px #ce6298;
+    transition: 0.1s;
+   }
+   
+   #submit:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   
+/*Textfeld*/
+
+input, textarea {    
+  margin-bottom: 10px;
+  padding: 15px 10px 10px;  
+  
+  color: #fff7f7;
+  border-radius: 5px;
+  width: 70%;
+  outline: none;
+   
+}
+    
+
+
+
+/*dies ist für die Email*/
+@media screen and (max-width: 800px) {
+a {
+    text-decoration: none;
+    color: rgb(18, 11, 11);
+    font-size: 0.9em;
+margin-right: 20%;}
+}
+@media screen and (min-width: 800px) {
+    a {
+        text-decoration: none;
+        color: rgb(18, 11, 11);
+        font-size: 1.2rem;}
+    }
+
+    a:hover {
+        color: rgb(246, 239, 239);
+        
+    }
+
+
+
+button {
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 24rem;
+    height: 3rem;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+  
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+   </style>
+   
+    </head>
+
+<body>
+    <!--Scroll animation /versuch
+    <div class="Wrapper">
+    <section class="under"></section></div><section class="over"></section>-->
+
+    <!--Scroll animaion verlangsahmung/ Versuch
+<ul class="carousel">
+    <li class="item"></li></ul>-->
+
+
+
+  
+    
+
+     <!--Page title-->
+<a href="https://www.juliansteiner.me">
+    <h2>
+    Portfolio
+    <span>Portfolio</span>
+    <span>Portfolio</span>
+    <span>Julian Steiner</span>
+
+</h2>
+</a>
+
+
+    
+
+
+        
+    
+<!--Bild von Mir-->
+<img id="Bild" src="Bild nah vor Bundestagskaliert500px.png">
+<span    class="text">Julian Steiner upcoming webdevoloper</span>
+        
+<header>     
+   
+
+
+      
+
+    
+<!--Video-->
+<video playsinline autoplay muted loop poster="Portfolio Video.mp4" id="bgvid">
+   
+    <source src="Portfolio Video.mp4" type="video/mp4">
+  </video>
+      </div>
+</div>
+</header>
+
+<!--Download try
+<a href="Text.txt" download>Downloade meine App</a> 
+-->
+
+
+      
+<div id="br"></div>
+
+<details open>
+<summary> Über mich:<br></summary>
+<p>Hallo, hier bin ich wieder, ich heiße wie bereits oben erwähnt Julian Steiner. Ich bin 18 Jahre alt und besuche die Freie Waldorfschule Hannover Bothfeld um dort mein Abitur zu machen. Zur zeit bin ich in der 12. Klasse.</p>
+</details>
+<details open>
+    <summary> Meine Erfahrung:<br></summary>
+    <p>Ich habe mir seit 5 Jahren einen PC zusammengebaut und verbessere seitdem mein Grundwissen etc. über Software. 
+        Auch habe ich mich näher mit Programmiersprachen beschäftigt und habe Html, Css und vieles über Responsives Webdesign gelernt. Durch dieses Wissen habe ich z.B. 
+        meine Website unter juliansteiner.me erarbeitet, für welche ich das Tool Canva nutzte. Ich habe auch sehr viel über VSCode Tools gelernt und kam dazu durch das 
+        Github Educative Programm Github Copilot Gratis zu nutzen. Das Potenzial dessen kommt zwar erst richtig zum Schein wenn man z.B. Javascript schreibt aber dadurch, 
+        dass ich dies noch nicht kann hilft es mir bei kleinen Html und Css Dokumenten.</p>
+    </details>
+        <details open>
+            <summary> Kontakt:<br></summary>
+            <p>Ich bin unter der Email: j.b.steiner.2004@gmail.com jederzeit erreichbar und wenn es dringend ist, auch per Handy unter der Nummer: 015120245055.</p>
+            </details>
+      
+
+
+ <br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
+<h3 style="text-align: center;">Website über mich</h3>
+<div class="web1">
+    <img class="web" src="Home650.png">
+    <img class="web" src="About Me650.png">
+    <img class="web" src="Experience650.png">
+    <img class="web" src="Skills650.png">
+    <img class="web" src="Portfolio650.png">
+    <img class="web" src="Testimonial650.png">
+    <img class="web" src="Contact650.png">
+</div>
+
+<h3 style="text-align: center;">Website Restaurant Levante</h3>
+<div class="web1">
+    <img class="web" src="LevanteHome_1650.png">
+    <img class="web" src="LevanteAbout650.png">
+    <img class="web" src="LevanteWhat We Do650.png">
+    <img class="web" src="LevantePhilosophy650.png">
+    <img class="web" src="LevanteFAQs650.png">
+    <img class="web" src="LevanteContact_1650.png">
+
+
+
+</div>
+
+<footer>
+    <header>
+        <p> <div id="h1">
+        Kontakt
+        </h1>
+       </p>
+    </div>
+    
+          Julian Steiner<br>
+          Gernsstrasse 36<br>        
+          30659 Hannover<br>
+    <div id="Email"><a href="mailto:j.b.steiner.2004@gmail.com">
+        j.b.steiner.2004@gmail.com</a>
+    </div>
+     <br><br>
+     <form action="index.html" method="post">
+     <div class="input-group">
+        <input required="" type="text" name="text" autocomplete="off" class="input">
+        <label class="user-label">Vorname</label>
+        <input required="" type="text" name="text" autocomplete="off" class="input">
+        <label class="user-label">Nachname</label>
+        <input required="" type="text" name="text" autocomplete="off" class="input">
+        <label class="user-label">Email</label>
+            
+            <textarea name="message" required class="input"></textarea>
+            <label class="user-label">Nachricht</label> <br>
+            <button id="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> 
+            
+            <h4>Abschicken</h4> </button>
+        </form>
+    </div>
+    
+</footer>
+<br><br>
+<!--Email Button-->
+<button class="learn-more">
+    <span class="circle" aria-hidden="true">
+    <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">
+<a id="mail" href="mailto:j.b.steiner.2004@gmail.com">
+    &nbsp&nbsp&nbsp&nbspEmail:<b>&nbspj.b.steiner.2004@gmail.com</b></a>
+</span>
+  </button>
+      
+
+</body>
+</html>
