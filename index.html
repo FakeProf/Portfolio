@@ -479,26 +479,33 @@ input, textarea {
   outline: none;
    
 }
-    
-
+    /*Email/footer*/
+.mail {
+    text-decoration: none;
+    color: black;
+}
+.mail:hover {
+    text-decoration: dotted underline cyan;
+    color: white;
+}
 
 
 /*for Email*/
 @media screen and (max-width: 800px) {
-a {
+#mail {
     text-decoration: none;
     color: rgb(18, 11, 11);
     font-size: 0.9em;
 margin-right: 20%;}
 }
 @media screen and (min-width: 800px) {
-    a {
+    #mail{
         text-decoration: none;
         color: rgb(18, 11, 11);
         font-size: 1.2rem;}
     }
 
-    a:hover {
+    #mail:hover {
         color: rgb(246, 239, 239);
         
     }
@@ -702,9 +709,9 @@ button {
           Julian Steiner<br>
           Gernsstrasse 36<br>        
           30659 Hannover<br>
-    <div id="Email"><a href="mailto:j.b.steiner.2004@gmail.com">
+    <a class="mail" href="mailto:j.b.steiner.2004@gmail.com">
         j.b.steiner.2004@gmail.com</a>
-    </div>
+    
      <br><br>
      <form action="index.html" method="post">
      <div class="input-group">
